@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------
-// Reflow Oven Controller
-// (c) 2014 Karl Pitrich <karl@pitrich.com>
-// (c) 2012-2013 Ed Simmons
+// Reflow Oven Controller Fork THX to Origonal Devs on wiki
+// New Developers below
+// John Reichard
 // ----------------------------------------------------------------------------
 
 //#define FAKE_HW 1
