@@ -25,8 +25,8 @@ Reflow Oven Controller
 * could also be used for slow coockers
 * *Please Note*: Requires Arduino IDE 1.5.x or newer
 
-(c) 2014 Karl Pitrich <karl@pitrich.com>
-in part based on a project (c) 2013 Ed Simmons <ed@estechnical.co.uk>
+(c) 2016 John Reichard <john@hobbywizards.com>
+in part based on a project (c) 2013 Ed Simmons <ed@estechnical.co.uk> , (c) 2014 Karl Pitrich <karl@pitrich.com>
 
 
 **Post action shot**
@@ -96,7 +96,7 @@ Obtaining the source code
 
 Get the code using `git`.
 
-	git clone https://github.com/estechnical/reflowOvenController.git
+	git clone https://github.com/OricalWorksINC/reflowOvenController
 
 or [download a Snapshot].
 
@@ -152,22 +152,14 @@ Things to note
 * Do not solder wiring inside you oven, the temperature might desolder you joints. **Crimp everything.**
 * Use proper earth ground connection for your ovens chassis.
 
-Ideas and todo
-====================
-* Optimize code size so that more features can fit
-* Clamp values for parameters to reasonalbe ranges
-* Add scrollbar (sample implementation in the demo for [Menu]
-* Separate PID configuration for each process step
-* try to make the display faster, it is very slow
-* Named profiles
-* Rewrite [Menu] so that is uses callback objects instead of spaghetti-callbacks
+
 
 Licensing
 ====================
 ```
 The MIT License (MIT)
 
-Copyright (c) 2014 karl@pitrich.com
+Copyright (c) 2016 JohnReichard
 All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
