@@ -1,5 +1,7 @@
 Reflow Oven Controller
 ====================
+Big Thanks to Ed Simmons <ed@estechnical.co.uk> , Karl Pitrich <karl@pitrich.com>
+For all there hard work on the original code that this is based on.
 
 
 **News**
