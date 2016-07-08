@@ -8,7 +8,9 @@ For all there hard work on the original code that this is based on.
 New method for better performance!
 
  NEW HARDWARE COMING SOON AND FIRMWARE REVISIONS FOR TUNNLE OVEN MULTIPLE TEMP PROBS, MULTIPLE HEATERS, AND STEPPER CONTROL FOR CONVEYOR SUPPORT!!!!!!
+ 
  ******** How To Upgrade Arduino For Faster Speeds! *********
+ 
  To boost your Arduino Uno's performance up to 25% faster, all you have to do is replace the 16 MHz crystal with 20 MHz crystal, and update the bootloader with one that designed for this upgraded speed (see instruction below).
  
  Please note that this is NOT overclocking, we'll just tuning it to maximum speed allowed by manufacturer as stated in ATmega328 datasheet. So it's 100% safe and guaranteed to run as reliable as before, it's just 25% faster :) up to nearly 20 MIPS!
@@ -33,9 +35,13 @@ atmega328_20.bootloader.lock_bits=0x0F
 atmega328_20.build.mcu=atmega328p
 atmega328_20.build.f_cpu=20000000L
 atmega328_20.build.core=arduino
+
 ----------------- End Of Code ----------------
+
 Step 2: Create new file with name ATmega328_20MHz.hex under hardware/arduino/bootloaders/atmega sub-directory with following content:
+
 ------------- Start Of Code --------------
+
 :107800000C94343C0C94513C0C94513C0C94513CE1
 :107810000C94513C0C94513C0C94513C0C94513CB4
 :107820000C94513C0C94513C0C94513C0C94513CA4
@@ -160,7 +166,9 @@ Step 2: Create new file with name ATmega328_20MHz.hex under hardware/arduino/boo
 :027F8C00800073
 :040000030000780081
 :00000001FF
+
 --------- End of Code ---------
+
 Step 3: desolder the old 16 Mhz crystal from Arduino Uno board. Please note that this action may void your warranty, please proceed on your own risk! If you're unsure with this, perhaps it's better to build a brand new Arduino compatible board by your own from scratch. For example, you can buy Playduino-One kit from Play-Zone — they ship worldwide — for Fr. 19.9 (about USD 21). If you live in Indonesia, you can also purchase Playduino-One Kit from azTech for only Rp150.000,- (less than USD 14).
 Step 4: Install a 20 MHz crystal. Soldering should be easy since space on bottom surface is sparse.
 Step 5: Burn the bootloader: open Arduino IDE, if you've done step #1 correctly then a new board should be appear under Tools > Board menu with name Arduino Uno++ 20MHz. Select the new board, attach USB cable to Arduino (or ISP programmer if you build Playduino One), and execute Tools > Burn Bootloader command. That's all, now you have a much faster Arduino!
