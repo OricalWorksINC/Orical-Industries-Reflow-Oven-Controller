@@ -7,7 +7,7 @@ For all there hard work on the original code that this is based on.
 **News**
 New method for better performance!
 
- NEW HARDWARE COMING SOON AND FIRMWARE REVISIONS FOR TUNNLE OVEN MULTIPLE TEMP PROBS, MULTIPLE HEATERS, AND STEPPER CONTROL FOR CONVEYOR SUPPORT!!!!!!
+ NEW HARDWARE COMING SOON AND FIRMWARE REVISIONS FOR TUNNLE OVENS!
  
  ******** How To Upgrade Arduino For Faster Speeds! *********
  
