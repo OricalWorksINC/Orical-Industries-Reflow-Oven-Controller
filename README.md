@@ -73,8 +73,8 @@ Errata and construction infos
 
 Issue | Notes
 ------------ | -------------
-Unfortunately, a trace is missing on the production PCB, you need to solder a bridge. The PCB eagle source has been corrected. | ![Missing Trace][ImgMissingTrace]
-I've used a switch mode power supply which induces a lot of noise on the power supply, causing the MAX31855 to be quite eratic, reporting VCC and GND shots where there are none. Use a linear power supply if you can. | I've added a LC-filter (100µH + 1000µF/100n) + ferrite beads between the PSU and the controller PCB.
+
+Code can only be uploded with the Arduino 1.0.6 IDE or the LCD won't dysplay anything in my case.
 
 
 Screenshots and usage information
