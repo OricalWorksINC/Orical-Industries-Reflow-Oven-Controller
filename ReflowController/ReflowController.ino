@@ -130,7 +130,7 @@ int16_t encMovement;
 int16_t encAbsolute;
 int16_t encLastAbsolute = -1;
 
-const uint8_t menuItemsVisible = 5;
+const uint8_t menuItemsVisible = 10;
 const uint8_t menuItemHeight = 12;
 bool menuUpdateRequest = true;
 bool initialProcessDisplay = false;
