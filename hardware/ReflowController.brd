@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -135,12 +135,10 @@
 <hole x="97" y="3" drill="3.2"/>
 <hole x="3" y="47" drill="3.2"/>
 <hole x="97" y="47" drill="3.2"/>
-<text x="65.7225" y="46.355" size="1.016" layer="21">github.com/0xPIT</text>
 <text x="76.835" y="10.795" size="0.8" layer="25">1</text>
 <text x="86.36" y="41.275" size="0.8" layer="25">1</text>
 <text x="90.805" y="35.56" size="0.8" layer="25" rot="R90">+5V</text>
-<text x="89.535" y="46.355" size="1.27" layer="16" font="vector" rot="MR0">(c)2014 karl@pitrich.com</text>
-<text x="84.455" y="46.355" size="1.016" layer="21">rev. 2</text>
+<text x="64.77" y="3.81" size="1.27" layer="1">Orical Robotics Reflow Controller v3.2</text>
 </plain>
 <libraries>
 <library name="pit">
@@ -1933,6 +1931,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
