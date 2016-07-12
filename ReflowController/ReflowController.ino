@@ -13,6 +13,7 @@
 //#define WITH_CALIBRATION 1 // loop timing calibration
 #define DEFAULT_LOOP_DELAY 89 // should be about 16% less for 60Hz mains
 
+#include <Wire.h>
 #include <avr/eeprom.h>
 #include <EEPROM.h>
 #include <PID_v1.h>
@@ -935,8 +936,9 @@ void updateProcessDisplay() {
 }
 
 // ----------------------------------------------------------------------------
-
+// Void setup !
 void setup() {
+  Wire.begin(); // join i2c bus (address optional for master)
   setupRelayPins();
 
   tft.initR(INITR_BLACKTAB);
@@ -1089,7 +1091,7 @@ uint8_t thermocoupleErrorCount;
 #define TC_ERROR_TOLERANCE 5 // allow for n consecutive errors due to noisy power supply before bailing out
 
 // ----------------------------------------------------------------------------
-
+byte x = 0;
 void loop(void) 
 {
   // --------------------------------------------------------------------------
@@ -1103,6 +1105,11 @@ void loop(void)
       menuUpdateRequest = true;
     }
   }
+//  I2C --------------------------------------------------
+Wire.beginTransmission(8); // transmit to device #8
+  Wire.write("Hola");        // sends four bytes
+  Wire.write(x);              // sends one byte
+  Wire.endTransmission();    // stop transmitting
 
   // --------------------------------------------------------------------------
   // handle button
