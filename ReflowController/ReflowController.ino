@@ -1,9 +1,10 @@
 // ----------------------------------------------------------------------------
-// Reflow Oven Controller Fork THX to Origonal Devs on wiki
+// Orical Robobtics Reflow Oven Controller Fork THX to Origonal Devs on wiki
 // New Developers below
 // John Reichard
 // ----------------------------------------------------------------------------
-
+// Adding Serial for co-processor to process the steppers and other calculations and operations
+//
 //#define FAKE_HW 1
 //#define PIDTUNE 1 // autotune wouldn't fit in the 28k available on the arduino pro micro.
 // -------NEW HARDWARE COMING SOON!!!-------
