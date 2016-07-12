@@ -31,6 +31,7 @@
 #ifdef PIDTUNE
 #include <PID_AutoTune_v0.h>
 #endif
+byte x = 0;
 // ----------------------------------------------------------------------------
 
 const char * ver = "3.2";
@@ -933,6 +934,12 @@ void updateProcessDisplay() {
   tft.print(" \x12 "); // alternative: \x7f
   printDouble(rampRate);
   tft.print("\367C/s    ");
+  //  I2C --------------------------------------------------
+Wire.beginTransmission(8); // transmit to device #8
+  Wire.write("Stat");        // sends four bytes
+  Wire.write(x);              // sends one byte
+  Wire.endTransmission();    // stop transmitting
+
 }
 
 // ----------------------------------------------------------------------------
@@ -1091,7 +1098,7 @@ uint8_t thermocoupleErrorCount;
 #define TC_ERROR_TOLERANCE 5 // allow for n consecutive errors due to noisy power supply before bailing out
 
 // ----------------------------------------------------------------------------
-byte x = 0;
+
 void loop(void) 
 {
   // --------------------------------------------------------------------------
@@ -1105,11 +1112,6 @@ void loop(void)
       menuUpdateRequest = true;
     }
   }
-//  I2C --------------------------------------------------
-Wire.beginTransmission(8); // transmit to device #8
-  Wire.write("Hola");        // sends four bytes
-  Wire.write(x);              // sends one byte
-  Wire.endTransmission();    // stop transmitting
 
   // --------------------------------------------------------------------------
   // handle button
