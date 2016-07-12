@@ -5,7 +5,8 @@ For all there hard work on the original code that this is based on.
 
 
 **News**
-New method for better performance!
+New method of prosscesing for better performance!
+Adding Serial for co-processor to process the steppers and other calculations and operations
 
  NEW HARDWARE COMING SOON AND FIRMWARE REVISIONS FOR TUNNLE OVENS!
  
