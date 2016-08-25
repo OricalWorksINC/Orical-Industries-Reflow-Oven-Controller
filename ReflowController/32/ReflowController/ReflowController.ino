@@ -1,3 +1,6 @@
+
+//  !!!!!!! FOR 32-BIT INTEl CURRY BASED BOARDS !!!!!!!
+
 // ----------------------------------------------------------------------------
 // Orical Robobtics Reflow Oven Controller Fork THX to Origonal Devs on wiki
 // New Developers below
@@ -14,7 +17,7 @@
 #define DEFAULT_LOOP_DELAY 89 // should be about 16% less for 60Hz mains
 
 #include <Wire.h>
-#include <avr/eeprom.h>
+#include <CurieEEPROM.h>
 #include <EEPROM.h>
 #include <PID_v1.h>
 #include <Adafruit_GFX.h>
